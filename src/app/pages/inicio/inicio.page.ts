@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
+  componentes: Componente[] = [
+    {
+      name: 'Action Sheet',
+      redirectTo: '/action-sheet'
+    },
+    {
+      name: 'Alert',
+      redirectTo: '/alert'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+interface Componente{
+  name: string;
+  redirectTo: string;
 }
