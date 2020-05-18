@@ -35,6 +35,22 @@ export class InicioPage implements OnInit {
     {
       name: 'Avatar',
       redirectTo: '/avatar'
+    },
+    {
+      name: 'Badge',
+      redirectTo: '/badge'
+    },
+    {
+      name: 'Button',
+      redirectTo: '/button'
+    },
+    {
+      name: 'Card',
+      redirectTo: '/card'
+    },
+    {
+      name: 'Checkbox',
+      redirectTo: '/checkbox'
     }
   ];
 
