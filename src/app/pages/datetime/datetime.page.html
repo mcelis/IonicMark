@@ -1,0 +1,29 @@
+<ion-header titulo="Datetime"></ion-header>
+
+<ion-content>
+  <ion-label>Fecha nacimiento</ion-label>
+  <ion-datetime placeholder="{{ fechaNacimiento | date: 'yyy-MM-dd' }}"
+  [(ngModel)] = "fechaNacimiento"
+  display-format = "YYYY MM DD"
+  cancelText="Salir"
+  (ionChange) = "cambioFecha($event)"
+  min ="2010-01-01"
+  max = "2015-01-01"
+  >
+  </ion-datetime>
+
+  <ion-datetime placeholder="{{ fechaNacimiento | date: 'yyy-MM-dd' }}"
+  [(ngModel)] = "fechaNacimiento"
+  display-format = "YYYY MM DD"
+  [pickerOptios] = "customPicker"
+  >
+  </ion-datetime>
+
+  <ion-datetime placeholder="{{ fechaNacimiento | date: 'yyy-MM-dd' }}"
+  [(ngModel)] = "fechaNacimiento"
+  display-format = "YYYY MM DD"
+  [pickerOptios] = "customYears"
+  >
+  </ion-datetime>
+  
+</ion-content>

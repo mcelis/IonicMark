@@ -19,6 +19,26 @@ const routes: Routes = [
     path: 'alert',
     loadChildren: () => import('./pages/alert/alert.module').then( m => m.AlertPageModule)
   },
+  {
+    path: 'chip',
+    loadChildren: () => import('./pages/chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
+  {
+    path: 'fab',
+    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
 ];
 
 @NgModule({

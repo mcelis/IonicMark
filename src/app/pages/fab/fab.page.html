@@ -1,0 +1,98 @@
+<ion-header titulo="Fab">
+  
+</ion-header>
+
+<ion-content>
+<!-- Posicion horizontal start, vertical top-->
+  <ion-fab slot="fixed">
+    <ion-fab-button>1</ion-fab-button>
+    <ion-fab-list side="end">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+<!-- Posicion horizontal center, vertical top-->
+  <ion-fab slot="fixed" horizontal="center">
+    <ion-fab-button>2</ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <!-- Posicion horizontal end, vertical top-->
+  <ion-fab slot="fixed" horizontal="end" >
+    <ion-fab-button>3</ion-fab-button>
+  </ion-fab>
+
+  <!-- Posicion horizontal end, vertical top-->
+  <ion-fab slot="fixed" horizontal="start" vertical="center">
+    <ion-fab-button>4</ion-fab-button>
+  </ion-fab>
+
+  <!-- Posicion horizontal end, vertical top-->
+  <ion-fab slot="fixed" horizontal="center" vertical="center">
+    <ion-fab-button>5</ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="onClickGoogle()">
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <!-- Posicion horizontal end, vertical top-->
+  <ion-fab slot="fixed" horizontal="end" vertical="center">
+    <ion-fab-button>6</ion-fab-button>
+  </ion-fab>
+
+  <!-- Posicion horizontal end, vertical top-->
+  <ion-fab slot="fixed" horizontal="start" vertical="bottom">
+    <ion-fab-button>7</ion-fab-button>
+  </ion-fab>
+
+  <!-- Posicion horizontal end, vertical top-->
+  <ion-fab slot="fixed" horizontal="center" vertical="bottom">
+    <ion-fab-button>8</ion-fab-button>
+  </ion-fab>
+
+  <!-- Posicion horizontal end, vertical top-->
+  <ion-fab slot="fixed" horizontal="end" vertical="bottom">
+    <ion-fab-button>9</ion-fab-button>
+  </ion-fab>
+
+   
+
+  <ion-list>
+    <ion-item *ngFor="let d of data; let i = index">
+      Numero: {{i + 1}}
+    </ion-item>
+    
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer!</ion-title>
+  </ion-toolbar>
+</ion-footer>

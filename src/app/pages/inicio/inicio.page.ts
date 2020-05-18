@@ -15,6 +15,26 @@ export class InicioPage implements OnInit {
     {
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    {
+      name: 'Chip',
+      redirectTo: '/chip'
+    },
+    {
+      name: 'Datetime',
+      redirectTo: '/datetime'
+    },
+    {
+      name: 'Fab',
+      redirectTo: '/fab'
+    },
+    {
+      name: 'Grid',
+      redirectTo: '/grid'
+    },
+    {
+      name: 'Avatar',
+      redirectTo: '/avatar'
     }
   ];
 
