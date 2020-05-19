@@ -55,6 +55,22 @@ const routes: Routes = [
     path: 'checkbox',
     loadChildren: () => import('./pages/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
   },
+  {
+    path: 'infinite',
+    loadChildren: () => import('./pages/infinite/infinite.module').then( m => m.InfinitePageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'list-item',
+    loadChildren: () => import('./pages/list-item/list-item.module').then( m => m.ListItemPageModule)
+  },
+  {
+    path: 'note',
+    loadChildren: () => import('./pages/note/note.module').then( m => m.NotePageModule)
+  },
 ];
 
 @NgModule({

@@ -1,3 +1,5 @@
+import { Componente, DatamenuService } from './../../services/datamenu.service';
+import { MenuComponent } from './../../components/menu/menu.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,61 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
 
-  componentes: Componente[] = [
-    {
-      name: 'Action Sheet',
-      redirectTo: '/action-sheet'
-    },
-    {
-      name: 'Alert',
-      redirectTo: '/alert'
-    },
-    {
-      name: 'Chip',
-      redirectTo: '/chip'
-    },
-    {
-      name: 'Datetime',
-      redirectTo: '/datetime'
-    },
-    {
-      name: 'Fab',
-      redirectTo: '/fab'
-    },
-    {
-      name: 'Grid',
-      redirectTo: '/grid'
-    },
-    {
-      name: 'Avatar',
-      redirectTo: '/avatar'
-    },
-    {
-      name: 'Badge',
-      redirectTo: '/badge'
-    },
-    {
-      name: 'Button',
-      redirectTo: '/button'
-    },
-    {
-      name: 'Card',
-      redirectTo: '/card'
-    },
-    {
-      name: 'Checkbox',
-      redirectTo: '/checkbox'
-    }
-  ];
 
-  constructor() { }
+  constructor(private dataMenu: DatamenuService) { }
+
+  componentes: Componente[];
 
   ngOnInit() {
+    this.componentes = this.dataMenu.getComponente();
   }
 
-}
-
-interface Componente{
-  name: string;
-  redirectTo: string;
 }

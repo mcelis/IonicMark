@@ -1,0 +1,75 @@
+<ion-header titulo="List and Items"></ion-header>
+
+<ion-content>
+  <ion-list-header lines="inset">
+    <ion-label>Cabecera</ion-label>
+    <ion-button>Boton</ion-button>
+    <ion-button fill="outline"> Boton 2</ion-button>
+  </ion-list-header>
+
+  <ion-item>
+    <ion-label>Item Basico</ion-label>
+  </ion-item>
+
+  <ion-item color="secundary">
+    <ion-label>Item concolor</ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick()">
+    <ion-label>Item con boton</ion-label>
+  </ion-item>
+
+  <ion-item href="https://ionicframework.com" > 
+    <ion-label>Item Url Ionic</ion-label>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-label>Division Basica</ion-label>
+  </ion-item-divider>
+
+  <ion-item-divider color="danger">
+    <ion-label>Division Basica</ion-label>
+  </ion-item-divider>
+
+  <ion-list>
+    <!--<ion-item-divider>
+      <ion-label>Section A</ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label>A1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>A2</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>A3</ion-label>
+    </ion-item>
+
+    <ion-item-divider>
+      <ion-label>Section B</ion-label>
+    </ion-item-divider>
+  
+    <ion-item>
+      <ion-label>B1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>B2</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>B3</ion-label>
+    </ion-item> -->
+
+    <ion-item-sliding>
+      <ion-item-options side="start">
+        <ion-item-option (click)="favorito()">Favorito</ion-item-option>
+        <ion-item-option color="danger" (click)="compartir()">Compartir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  
+
+
+
+</ion-content>

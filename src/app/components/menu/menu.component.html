@@ -1,0 +1,16 @@
+<ion-menu side="start" menuId="firstMenu" contentId="main" #MiMenu>
+  <ion-header>
+    <ion-toolbar color="secondary">
+    <ion-title>Start Menu</ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item *ngFor="let c of componentes" [routerLink]= "c.redirectTo" detail (click)="onClickMenu()">
+        <ion-label>{{c.name}}</ion-label>
+      </ion-item>
+      
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
