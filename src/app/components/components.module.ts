@@ -4,14 +4,16 @@ import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 import { MenuComponent } from './menu/menu.component';
 import { Routes, RouterModule } from '@angular/router';
+import { PopviewComponent } from './popview/popview.component';
 
 
 
 @NgModule({
-  declarations: [HeaderComponent, MenuComponent],
+  declarations: [HeaderComponent, MenuComponent, PopviewComponent],
   exports: [
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    PopviewComponent
   ],
   imports: [
     CommonModule,

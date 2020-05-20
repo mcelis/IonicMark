@@ -68,6 +68,34 @@ export class DatamenuService {
     {
       name: 'Note',
       redirectTo: '/note'
+    },
+    {
+      name: 'Modal',
+      redirectTo: '/modal'
+    },
+    {
+      name: 'Pop over',
+      redirectTo: '/popover'
+    },
+    {
+      name: 'Loading',
+      redirectTo: '/loadimg'
+    },
+    {
+      name: 'Progress bar',
+      redirectTo: '/progressbar'
+    },
+    {
+      name: 'Radio',
+      redirectTo: '/radio'
+    },
+    {
+      name: 'Range',
+      redirectTo: '/range'
+    },
+    {
+      name: 'Refresh',
+      redirectTo: '/refresh'
     }
   ];
 

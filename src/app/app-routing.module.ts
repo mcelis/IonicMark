@@ -71,6 +71,34 @@ const routes: Routes = [
     path: 'note',
     loadChildren: () => import('./pages/note/note.module').then( m => m.NotePageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'loadimg',
+    loadChildren: () => import('./pages/loadimg/loadimg.module').then( m => m.LoadimgPageModule)
+  },
+  {
+    path: 'progressbar',
+    loadChildren: () => import('./pages/progressbar/progressbar.module').then( m => m.ProgressbarPageModule)
+  },
+  {
+    path: 'radio',
+    loadChildren: () => import('./pages/radio/radio.module').then( m => m.RadioPageModule)
+  },
+  {
+    path: 'range',
+    loadChildren: () => import('./pages/range/range.module').then( m => m.RangePageModule)
+  },
+  {
+    path: 'refresh',
+    loadChildren: () => import('./pages/refresh/refresh.module').then( m => m.RefreshPageModule)
+  },
 ];
 
 @NgModule({
